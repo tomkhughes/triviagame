@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="header-container">
+		<h1>NBA Trivia Game</h1>
+	</div>
+	<div class="main-container">
+		<section class="start-page">
+			<button class="start-game">Start</button>
+		</section>
+		<section class=question-page>
+			<div class="timer"><span>Time Remaining: </span>	
+			</div><br>
+		<!-- QUESTION 1 -->	
+			<div class="question"><span>What city did the Lakers play in before moving to L.A.?	</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question1" value="1"> Minneapolis
+						<input type="radio" name="question1" value="2"> Baltimore
+						<input type="radio" name="question1" value="3"> Boston
+						<input type="radio" name="question1" value="4"> Seattle
+					</form>
+				</div>
+			</div>
+			<br>
+		<!-- QUESTION 2 -->	
+			<div class="question"><span>What college did 2012 #1 pick Anthony Davis go to?</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question2" value="1"> Duke
+						<input type="radio" name="question2" value="2"> Kentucky
+						<input type="radio" name="question2" value="3"> North Carolina
+						<input type="radio" name="question2" value="4"> Virginia
+					</form>
+				</div>
+			</div>
+			<br>
+		<!-- QUESTION 3 -->
+			<div class="question"><span>Who led the NBA in hair colors in 1995?</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question3" value="1"> Michael Jordan
+						<input type="radio" name="question3" value="2"> Scottie Pippen
+						<input type="radio" name="question3" value="3"> Dennis Rodman
+						<input type="radio" name="question3" value="4"> Gary Payton
+					</form>
+				</div>
+			</div>
+			<br>
+		<!-- QUESTION 4 -->	
+		<div class="question"><span>What team has the most NBA Finals appearances?</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question4" value="1"> Boston Celtics
+						<input type="radio" name="question4" value="2"> Golden State Warriors
+						<input type="radio" name="question4" value="3"> Washington Wizards
+						<input type="radio" name="question4" value="4"> LA Lakers
+					</form>
+				</div>
+			</div>
+			<br>
+		<!-- QUESTION 5 -->	
+			<div class="question"><span>What play has the nickname: The Mailman?</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question5" value="1"> Karl Malone
+						<input type="radio" name="question5" value="2"> Lebron James
+						<input type="radio" name="question5" value="3"> John Wall
+						<input type="radio" name="question5" value="4"> Kevin Durant
+					</form>
+				</div>
+			</div>
+			<br>
+		<!-- QUESTION 6 -->	
+			<div class="question"><span> What year did Michael Jordan win his first title?	</span>
+				<div class="answers">
+					<form>
+					  	<input type="radio" name="question6" value="1"> 1991
+						<input type="radio" name="question6" value="2"> 1992
+						<input type="radio" name="question6" value="3"> 1995
+						<input type="radio" name="question6" value="4"> 1996
+					</form>
+				</div>
+			</div>
+		<input type="submit" value="Submit">
+		</section>
+		<section class="results-page">
+			<h2 id="correct-answers">Correct Answers: </h2>
+			<h2 id="wrong-answers">Wrong Answers: </h2>
+			<h2 id="unanswered">Unanswered: </h2>
+			<button class="play-again">Play Again</button>
+		</section>
+	</div>
+	
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
