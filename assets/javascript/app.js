@@ -28,7 +28,7 @@ window.onload = function() {
 
 var stopwatch = {
 
-  time: 2,
+  time: 30,
   
   start: function() {
     $('.question-container').show();
@@ -49,10 +49,6 @@ var stopwatch = {
     $('.score-container').show();
     $('.question-container').hide(); 
     $('.message-container').hide();
- 
-// location.reload();
-
-
     }
   },
 
@@ -74,8 +70,8 @@ var stopwatch = {
 
 $('.answerButton').on('click', function(){
   if ($(this).val() === 'true') {
-    $('.right-message').text('CORRECT!').fadeIn().delay(3000).fadeOut();
-    $('.question-container').fadeOut().delay(3000).fadeIn();
+    $('.right-message').text('CORRECT!').fadeIn().delay(2000).fadeOut().css({ 'color': 'green', 'font-size': '20px','font-weight': 'bold' });
+    $('.question-container').fadeOut().delay(2000).fadeIn();
     console.log($(this).html() + ' correct answer');
     $('.message-container').show();
     correct++;
@@ -83,34 +79,31 @@ $('.answerButton').on('click', function(){
 
   }  
 
- else if ($(this).val() === "false") {
-    var result = $('.wrong-message').text('WRONG!').fadeIn().delay(300).fadeOut();
-    result = $('.question-container').fadeOut().delay(300).fadeIn();
-    $('message-container').show();
+  if ($(this).val() === "false") {
+    $('.wrong-message').text('WRONG!').fadeIn().delay(2000).fadeOut().css({ 'color': 'red', 'font-size': '20px','font-weight': 'bold' });
+    $('.question-container').fadeOut().delay(2000).fadeIn();
+    $('.message-container').show();
     incorrect++;
     console.log($(this).html() + ' wrong answer');
     scoreCounter();
 
   }
 
-$('correct-answer').html('Correct Answers ' + correct);
-console.log('Correct Count ' + correct);
-$('incorrect-answer').html('Correct Answers ' + incorrect);
-console.log('Incorrect Count ' + incorrect);
+});
 
-
-  function scoreCounter() {
+function scoreCounter() {
     questions++;
     console.log('question count' + questions);
-    $('.timeUp').append('<h2>Time is up!<h2>');
+    $('.timeUp').text('Time is up!');
     $('.correct-answer').text('Correct Answers: ' + correct);
     $('.incorrect-answer').text('Incorrect Answers: ' + incorrect);
 
-  }
+  };
 
+$('.playAgain').on('click', function() {
+  location.reload();
+})
 
-
-});
 
 $( document ).ready(function() {
    
