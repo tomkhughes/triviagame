@@ -1,49 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Trivia Game</title>
 </head>
 
 <body>
-    <div class="header-container">
-        <h1>NBA Trivia Game</h1>
-    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+              <!-- <img id="image" src="assets/images/image1.jpg" alt="triviaimage"> -->
+                <br>
+                <br>
+            </div>
+            <div class="timer-container">
+                 <button class="btn btn-primary start-game">Start the game!</button>
+            </div>
+           
+            <div class="question-container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="time-left">
+                            <div class="well">Time left: <span id="timer"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div>
+                            <h4>What player has the nickname: The Greek Freak?</h4>
+                            <div>
+                                <button class=answerButton value="false">Lebron James</button>
+                                <button class=answerButton value="false">Carmelo Anthony</button>
+                                <button class=answerButton value="true">Giannis Antetokounmpo</button>
+                                <button class=answerButton value="false">Stephen Curry</button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>Who led the NBA in hair colors in 1995?</h4>
+                            <div>
+                                <button class=answerButton value="false">Michael Jordan</button>
+                                <button class=answerButton value="false">Scottie Pippen</button>
+                                <button class=answerButton value="true">Dennis Rodman</button>
+                                <button class=answerButton value="false">Gary Payton</button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>What city did the Lakers play in before moving to L.A.?</h4>
+                            <div>
+                                <button class=answerButton value="false">Baltimore</button>
+                                <button class=answerButton value="true">Minneapolis</button>
+                                <button class=answerButton value="false">Boston</button>
+                                <button class=answerButton value="false">Seattle</button>
 
-    <div class="main-container">
-
-        <div class="start-page">
-            <button id="start-button">Start</button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>What college did 2012 #1 pick Anthony Davis go to?</h4>
+                            <div>
+                                <button class=answerButton value="false">North Carolina</button>
+                                <button class=answerButton value="true">Kentucky</button>
+                                <button class=answerButton value="false">Duke</button>
+                                <button class=answerButton value="false">Virginia</button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <h4>What player has the nickname: The Mailman?</h4>
+                            <div>
+                                <button class=answerButton value="false">Kevin Durant</button>
+                                <button class=answerButton value="false">Kyrie Irving</button>
+                                <button class=answerButton value="true">Karl Malone</button>
+                                 <button class=answerButton value="true">Dwight Howard</button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="right"></div>
+                        <div class="right-message"></div>
+                        <div class="wrong-message"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="score-container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="timeUp"></div>
+                        <div class="correct-answer">Correct Answer: </div>
+                        <div class="incorrect-answer"></div>
+                        <div class="unanswered"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class= "question-page">
-
-            <div id="timer"><span>Time Remaining: </span></div>
-
-            <br>
-
-            <div class="question-container"><span>What city did the Lakers play in before moving to L.A.?	</span></div>
-                <div id="question1" class="question"></div>
-                <div id="question2" class="question"></div>
-            <div class="answers">Answer example</div>
-
-            <br>
-
-            <input type="submit" value="Submit">
-        </div>
-
-
-        <div class="results-page">
-            <div id="correct-answers">Correct Answers: </div>
-            <div id="wrong-answers">Wrong Answers: </div>
-            <div id="Unanswered">Unanswered: </div>
-            <button class="play-again">Play Again</button>
-        </div>
-
-    </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
 </body>
