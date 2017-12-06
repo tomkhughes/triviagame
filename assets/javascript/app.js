@@ -75,7 +75,7 @@ $('.answerButton').on('click', function(){
     console.log($(this).html() + ' correct answer');
     $('.message-container').show();
     correct++;
-    scoreCounter();
+    scoreCounter()  ;
 
   }  
 
